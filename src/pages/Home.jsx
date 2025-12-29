@@ -384,17 +384,17 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {[
               {
-                stars: "⭐⭐⭐⭐⭐",
+                stars: "⭐⭐⭐",
                 text: "The best coffee I've ever had! Fizal Cafe's selection is incredible and the delivery was super fast.",
                 author: "Sarah Johnson"
               },
               {
-                stars: "⭐⭐⭐⭐⭐",
+                stars: "⭐⭐⭐",
                 text: "Amazing quality and excellent customer service. Fizal Cafe has become my go-to for all coffee needs!",
                 author: "Michael Chen"
               },
               {
-                stars: "⭐⭐⭐⭐⭐",
+                stars: "⭐⭐⭐",
                 text: "Perfect blend of quality and convenience. The website is beautiful and easy to use!",
                 author: "Emily Davis"
               }
