@@ -1,6 +1,7 @@
 import { useState, useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { toast } from 'react-toastify';
 import { AuthContext } from '../context/AuthContext';
 
 const Login = () => {
@@ -10,7 +11,6 @@ const Login = () => {
     email: '',
     password: ''
   });
-  const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
@@ -22,14 +22,15 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError('');
     setLoading(true);
 
     try {
       await login(formData.email, formData.password);
+      toast.success('Login successful! 🎉');
       navigate('/');
     } catch (err) {
-      setError(err.response?.data?.message || 'Login failed. Please try again.');
+      const errorMessage = err.response?.data?.message || 'Login failed. Please try again.';
+      toast.error(errorMessage);
     } finally {
       setLoading(false);
     }
@@ -65,16 +66,6 @@ const Login = () => {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-coffee-800">Welcome Back</h2>
           <p className="text-coffee-600 mt-2 text-sm md:text-base">Login to your account</p>
         </motion.div>
-        
-        {error && (
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="bg-red-100 border-2 border-red-400 text-red-800 px-4 py-3 rounded-xl mb-6 font-semibold text-sm md:text-base"
-          >
-            {error}
-          </motion.div>
-        )}
 
         <form onSubmit={handleSubmit}>
           <div className="mb-4 md:mb-6">
