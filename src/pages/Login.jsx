@@ -67,9 +67,13 @@ const Login = () => {
         </motion.div>
         
         {error && (
-          <div className="bg-amber-100 border-2 border-amber-400 text-amber-800 px-4 py-3 rounded-xl mb-6 font-semibold">
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="bg-red-100 border-2 border-red-400 text-red-800 px-4 py-3 rounded-xl mb-6 font-semibold text-sm md:text-base"
+          >
             {error}
-          </div>
+          </motion.div>
         )}
 
         <form onSubmit={handleSubmit}>
