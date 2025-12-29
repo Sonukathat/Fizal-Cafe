@@ -30,9 +30,10 @@ const Home = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
+      className="w-full overflow-x-hidden"
     >
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-coffee-900 via-coffee-800 to-coffee-900 text-white pt-20">
+      <section className="relative overflow-hidden bg-gradient-to-br from-coffee-900 via-coffee-800 to-coffee-900 text-white pt-20 w-full">
         {/* Background accents */}
         <div className="absolute inset-0">
           <div className="absolute -left-10 -top-10 w-64 h-64 md:w-96 md:h-96 bg-amber-200/20 blur-3xl rounded-full" />

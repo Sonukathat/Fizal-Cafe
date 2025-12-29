@@ -62,7 +62,7 @@ function App() {
     <AuthProvider>
       <CartProvider>
         <Router>
-          <div className="min-h-screen bg-cream-50">
+          <div className="min-h-screen bg-cream-50 w-full overflow-x-hidden">
             <Navbar />
             <AnimatedRoutes />
             <ToastContainer

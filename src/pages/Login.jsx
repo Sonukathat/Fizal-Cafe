@@ -42,7 +42,7 @@ const Login = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-cream-50 via-cream-100 to-coffee-50 pt-24 pb-6 md:pb-12 px-3 sm:px-4"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-cream-50 via-cream-100 to-coffee-50 pt-24 pb-6 md:pb-12 px-3 sm:px-4 w-full overflow-x-hidden"
     >
       <motion.div
         initial={{ opacity: 0, y: 30 }}
