@@ -40,8 +40,8 @@ const Home = () => {
           <div className="absolute inset-0 opacity-15 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.08),_transparent_40%)]" />
         </div>
 
-        <div className="container mx-auto px-4 py-12 md:py-20 lg:py-24 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+        <div className="container mx-auto px-3 sm:px-4 py-8 sm:py-12 md:py-20 lg:py-24 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-14 items-center">
             {/* Text column */}
             <div className="text-center lg:text-left space-y-5 md:space-y-6">
               <motion.div
@@ -58,17 +58,17 @@ const Home = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight bg-gradient-to-r from-cream-50 via-cream-100 to-amber-200 bg-clip-text text-transparent"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight bg-gradient-to-r from-cream-50 via-cream-100 to-amber-200 bg-clip-text text-transparent px-2 sm:px-0"
               >
                 Craft Coffee,
-                <br className="hidden md:block" /> Cozy Moments.
+                <br className="hidden sm:block" /> Cozy Moments.
               </motion.h1>
 
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-base sm:text-lg md:text-xl text-cream-100/90 max-w-2xl mx-auto lg:mx-0"
+                className="text-sm sm:text-base md:text-lg lg:text-xl text-cream-100/90 max-w-2xl mx-auto lg:mx-0 px-2 sm:px-0"
               >
                 Freshly roasted beans, artisan pastries, and a warm space for your daily ritual or your next celebration.
               </motion.p>
@@ -143,8 +143,8 @@ const Home = () => {
       </section>
 
       {/* Categories Section */}
-      <section className="py-12 md:py-20 bg-gradient-to-b from-cream-50 to-white">
-        <div className="container mx-auto px-4">
+      <section className="py-8 sm:py-12 md:py-20 bg-gradient-to-b from-cream-50 to-white">
+        <div className="container mx-auto px-3 sm:px-4">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -186,8 +186,8 @@ const Home = () => {
       </section>
 
       {/* Products Section */}
-      <section className="py-12 md:py-20 bg-white">
-        <div className="container mx-auto px-4">
+      <section className="py-8 sm:py-12 md:py-20 bg-white">
+        <div className="container mx-auto px-3 sm:px-4">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

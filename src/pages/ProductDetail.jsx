@@ -46,8 +46,8 @@ const ProductDetail = () => {
 
   if (loading) {
     return (
-      <div className="container mx-auto px-4 pt-24 pb-12 text-center">
-        <div className="text-2xl text-coffee-700">Loading product...</div>
+      <div className="container mx-auto px-3 sm:px-4 pt-24 pb-12 text-center">
+        <div className="text-lg sm:text-xl md:text-2xl text-coffee-700">Loading product...</div>
       </div>
     );
   }
@@ -64,7 +64,7 @@ const ProductDetail = () => {
       transition={{ duration: 0.3 }}
       className="min-h-screen bg-gradient-to-b from-cream-50 to-white pt-24 pb-6 md:pb-12"
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-3 sm:px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 max-w-6xl mx-auto">
           {/* Product Image */}
           <motion.div
@@ -91,9 +91,9 @@ const ProductDetail = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="bg-cream-50 rounded-2xl md:rounded-3xl p-4 md:p-8 shadow-xl border border-coffee-200"
           >
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 text-coffee-800">{product.name}</h1>
-            <p className="text-3xl md:text-4xl font-bold text-coffee-700 mb-4 md:mb-6">${product.price}</p>
-            <p className="text-coffee-700 mb-6 md:mb-8 text-base md:text-lg leading-relaxed">{product.description}</p>
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 md:mb-4 text-coffee-800">{product.name}</h1>
+            <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-coffee-700 mb-3 md:mb-6">${product.price}</p>
+            <p className="text-coffee-700 mb-4 md:mb-8 text-sm sm:text-base md:text-lg leading-relaxed">{product.description}</p>
 
             {product.category && (
               <div className="mb-4 md:mb-6 p-3 md:p-4 bg-cream-100 rounded-lg md:rounded-xl">

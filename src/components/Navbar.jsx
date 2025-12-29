@@ -19,13 +19,13 @@ const Navbar = () => {
     <motion.nav initial={{ y: -100 }} animate={{ y: 0 }} transition={{ duration: 0.5 }} className="sticky top-0 z-50 bg-transparent">
       <div className="container mx-auto px-3 sm:px-4">
         <div className="flex items-center justify-center">
-          <div className="w-full fixed top-6 max-w-5xl bg-white/10 text-cream-50 rounded-full h-14 md:h-16 shadow-xl border border-white/20 backdrop-blur-lg backdrop-saturate-150 px-4 md:px-6 flex items-center justify-between">
+          <div className="w-full fixed top-3 sm:top-6 max-w-5xl bg-white/10 text-cream-50 rounded-full h-12 sm:h-14 md:h-16 shadow-xl border border-white/20 backdrop-blur-lg backdrop-saturate-150 px-3 sm:px-4 md:px-6 flex items-center justify-between">
             {/* Logo */}
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="flex items-center gap-2">
-              <div className="w-8 h-8 md:w-9 md:h-9 rounded-full bg-cream-50 flex items-center justify-center text-coffee-900 font-bold shadow-md border border-coffee-200 text-sm md:text-base">
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="flex items-center gap-1 sm:gap-2">
+              <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-9 md:h-9 rounded-full bg-cream-50 flex items-center justify-center text-coffee-900 font-bold shadow-md border border-coffee-200 text-xs sm:text-sm md:text-base">
                 FC
               </div>
-              <Link to="/" className="hidden sm:block text-base md:text-lg font-semibold">
+              <Link to="/" className="hidden sm:block text-xs sm:text-base md:text-lg font-semibold">
                 Fizal Cafe
               </Link>
             </motion.div>

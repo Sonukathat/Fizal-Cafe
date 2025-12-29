@@ -32,8 +32,8 @@ const Products = () => {
 
   if (loading) {
     return (
-      <div className="container mx-auto px-4 pt-24 pb-12 text-center">
-        <div className="text-2xl text-coffee-700">Loading products...</div>
+      <div className="container mx-auto px-3 sm:px-4 pt-24 pb-12 text-center">
+        <div className="text-lg sm:text-xl md:text-2xl text-coffee-700">Loading products...</div>
       </div>
     );
   }
@@ -46,7 +46,7 @@ const Products = () => {
       transition={{ duration: 0.3 }}
       className="min-h-screen bg-gradient-to-b from-cream-50 to-white pt-24 pb-6 md:pb-12"
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-3 sm:px-4">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -96,10 +96,10 @@ const Products = () => {
         {/* Products Grid */}
         {products.length === 0 ? (
           <div className="text-center py-12 md:py-16">
-            <p className="text-xl md:text-2xl text-coffee-600">No products found in this category.</p>
+            <p className="text-lg sm:text-xl md:text-2xl text-coffee-600">No products found in this category.</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-8">
             {products.map((product, index) => (
               <motion.div
                 key={product._id}
@@ -110,23 +110,23 @@ const Products = () => {
               >
                 <Link
                   to={`/products/${product._id}`}
-                  className="bg-cream-50 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all border border-coffee-100 block"
+                  className="bg-cream-50 rounded-xl sm:rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all border border-coffee-100 block"
                 >
                 <div className="relative overflow-hidden">
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-56 object-cover hover:scale-110 transition-transform duration-300"
+                    className="w-full h-40 sm:h-48 md:h-56 object-cover hover:scale-110 transition-transform duration-300"
                   />
-                  <div className="absolute top-4 right-4 bg-coffee-700 text-cream-50 px-4 py-2 rounded-full text-lg font-bold shadow-xl">
+                  <div className="absolute top-2 right-2 sm:top-4 sm:right-4 bg-coffee-700 text-cream-50 px-2 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-base md:text-lg font-bold shadow-xl">
                     ${product.price}
                   </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2 text-coffee-800">{product.name}</h3>
-                  <p className="text-sm text-coffee-600 line-clamp-2 mb-3">{product.description}</p>
+                <div className="p-3 sm:p-4 md:p-6">
+                  <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2 text-coffee-800">{product.name}</h3>
+                  <p className="text-xs sm:text-sm text-coffee-600 line-clamp-2 mb-2 md:mb-3">{product.description}</p>
                   {product.stock === 0 && (
-                    <p className="text-amber-600 text-sm font-semibold">Out of Stock</p>
+                    <p className="text-amber-600 text-xs sm:text-sm font-semibold">Out of Stock</p>
                   )}
                 </div>
               </Link>

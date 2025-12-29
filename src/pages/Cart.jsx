@@ -19,14 +19,14 @@ const Cart = () => {
 
   if (cartItems.length === 0) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-cream-50 to-white flex items-center justify-center pt-24">
+      <div className="min-h-screen bg-gradient-to-b from-cream-50 to-white flex items-center justify-center pt-24 px-3 sm:px-4">
         <div className="text-center">
-          <div className="text-6xl mb-6">🛒</div>
-          <h1 className="text-4xl font-bold mb-4 text-coffee-800">Your Cart is Empty</h1>
-          <p className="text-coffee-600 mb-8 text-lg">Add some delicious items to get started!</p>
+          <div className="text-4xl sm:text-5xl md:text-6xl mb-4 md:mb-6">🛒</div>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4 text-coffee-800">Your Cart is Empty</h1>
+          <p className="text-coffee-600 mb-6 md:mb-8 text-base md:text-lg">Add some delicious items to get started!</p>
           <Link
             to="/products"
-            className="bg-gradient-to-r from-coffee-600 to-coffee-700 text-white px-10 py-4 rounded-full font-bold text-lg hover:from-coffee-700 hover:to-coffee-800 transition-all shadow-xl hover:shadow-2xl hover:scale-105 inline-block"
+            className="bg-gradient-to-r from-coffee-600 to-coffee-700 text-white px-6 py-3 sm:px-8 sm:py-3 md:px-10 md:py-4 rounded-full font-bold text-sm sm:text-base md:text-lg hover:from-coffee-700 hover:to-coffee-800 transition-all shadow-xl hover:shadow-2xl hover:scale-105 inline-block"
           >
             Browse Menu
           </Link>
@@ -43,7 +43,7 @@ const Cart = () => {
       transition={{ duration: 0.3 }}
       className="min-h-screen bg-gradient-to-b from-cream-50 to-white pt-24 pb-6 md:pb-12"
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-3 sm:px-4">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
