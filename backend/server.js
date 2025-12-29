@@ -19,7 +19,7 @@ app.use('/api/bookings', require('./routes/booking'));
 app.use('/api/admin', require('./routes/admin'));
 
 // Connect to MongoDB
-const mongoURI = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/cofy';
+const mongoURI = process.env.MONGODB_URI;
 mongoose.connect(mongoURI)
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => {
