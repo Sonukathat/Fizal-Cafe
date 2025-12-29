@@ -114,7 +114,7 @@ const Navbar = () => {
               </Link>
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="text-cream-50 focus:outline-none"
+                className="text-coffee-900 focus:outline-none"
                 aria-label="Toggle menu"
               >
                 {mobileMenuOpen ? <span className="text-2xl">✕</span> : <span className="text-2xl">☰</span>}
