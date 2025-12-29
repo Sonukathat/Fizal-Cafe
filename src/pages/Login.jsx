@@ -121,11 +121,11 @@ const Login = () => {
           </Link>
         </p>
 
-        <div className="mt-4 md:mt-6 p-3 md:p-4 bg-amber-50 border-2 border-amber-200 rounded-lg md:rounded-xl">
+        {/* <div className="mt-4 md:mt-6 p-3 md:p-4 bg-amber-50 border-2 border-amber-200 rounded-lg md:rounded-xl">
           <p className="text-xs md:text-sm text-amber-800 font-semibold">
             <strong>Admin Login:</strong> Create an admin user in the database with isAdmin: true, or register and manually set isAdmin in MongoDB.
           </p>
-        </div>
+        </div> */}
       </motion.div>
     </motion.div>
   );
