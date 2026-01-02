@@ -301,17 +301,17 @@ const Home = () => {
                 {
                   title: 'Birthday Parties',
                   desc: 'Celebrate your special day with delicious food and great ambiance',
-                  img: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80'
+                  img: 'https://plus.unsplash.com/premium_photo-1683121073242-7bde1375c742?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmlydGhkYXklMjBwYXJ0eXxlbnwwfHwwfHx8MA%3D%3D'
                 },
                 {
                   title: 'Corporate Events',
                   desc: 'Professional space for meetings, seminars, and team building',
-                  img: 'https://images.unsplash.com/photo-1556767576-5ec41e3239af?auto=format&fit=crop&w=800&q=80'
+                  img: 'https://i.pinimg.com/736x/5b/e7/35/5be735a3514c4e5524debab9dc9da2d9.jpg'
                 },
                 {
                   title: 'Party Ground & Hall',
                   desc: 'Spacious indoor/outdoor area for up to 100 guests with decor',
-                  img: 'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=800&q=80'
+                  img: 'https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2VkZGluZyUyMGhhbGx8ZW58MHx8MHx8fDA%3D'
                 }
               ].map((item, index) => (
                 <motion.div
