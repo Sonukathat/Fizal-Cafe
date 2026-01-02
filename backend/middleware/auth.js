@@ -14,7 +14,7 @@ const auth = async (req, res, next) => {
 
     // Verify token
     const decoded = jwt.verify(token, process.env.JWT_SECRET || 'secret');
-     
+    
     // Find user and attach to request
     const user = await User.findById(decoded.userId).select('-password');
     if (!user) {
