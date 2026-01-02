@@ -89,7 +89,7 @@ const Cart = () => {
                         {product.name}
                       </Link>
                     </h3>
-                    <p className="text-coffee-700 font-semibold text-base md:text-lg">${product.price}</p>
+                    <p className="text-coffee-700 font-semibold text-base md:text-lg">₹{product.price}</p>
                   </div>
                   <div className="flex items-center justify-between sm:justify-end w-full sm:w-auto space-x-4 md:space-x-6">
                     <div className="flex items-center space-x-2 md:space-x-3 bg-cream-100 rounded-lg md:rounded-xl p-1 md:p-2">
@@ -108,7 +108,7 @@ const Cart = () => {
                       </button>
                     </div>
                     <p className="text-lg md:text-xl font-bold text-coffee-800">
-                      ${(product.price * item.quantity).toFixed(2)}
+                      ₹{(product.price * item.quantity).toFixed(2)}
                     </p>
                     <button
                       onClick={() => removeFromCart(productId)}
@@ -136,7 +136,7 @@ const Cart = () => {
             <div className="space-y-3 md:space-y-4 mb-4 md:mb-6">
               <div className="flex justify-between text-base md:text-lg">
                 <span>Subtotal:</span>
-                <span className="font-bold">${getTotalPrice().toFixed(2)}</span>
+                <span className="font-bold">₹{getTotalPrice().toFixed(2)}</span>
               </div>
               <div className="flex justify-between text-base md:text-lg">
                 <span>Shipping:</span>
@@ -144,7 +144,7 @@ const Cart = () => {
               </div>
               <div className="border-t border-cream-200 pt-3 md:pt-4 flex justify-between text-xl md:text-2xl font-bold">
                 <span>Total:</span>
-                <span>${getTotalPrice().toFixed(2)}</span>
+                <span>₹{getTotalPrice().toFixed(2)}</span>
               </div>
             </div>
             <button

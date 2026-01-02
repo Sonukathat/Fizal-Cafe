@@ -343,7 +343,7 @@ const AdminDashboard = () => {
               {products.map(product => (
                 <tr key={product._id} className="border-b border-coffee-200 hover:bg-cream-100 transition-colors">
                   <td className="px-3 py-2 md:px-6 md:py-4 text-coffee-800 font-semibold text-sm md:text-base">{product.name}</td>
-                  <td className="px-3 py-2 md:px-6 md:py-4 text-coffee-700 font-bold text-sm md:text-base">${product.price}</td>
+                  <td className="px-3 py-2 md:px-6 md:py-4 text-coffee-700 font-bold text-sm md:text-base">₹{product.price}</td>
                   <td className="px-3 py-2 md:px-6 md:py-4 text-coffee-700 text-sm md:text-base">{product.stock}</td>
                   <td className="px-3 py-2 md:px-6 md:py-4">
                     <div className="flex flex-col sm:flex-row gap-2">

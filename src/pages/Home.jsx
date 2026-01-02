@@ -228,7 +228,7 @@ const Home = () => {
                     className="w-full h-56 object-cover hover:scale-110 transition-transform duration-300"
                   />
                   <div className="absolute top-2 right-2 md:top-4 md:right-4 bg-coffee-700 text-cream-50 px-2 py-1 md:px-3 md:py-1 rounded-full text-xs md:text-sm font-bold shadow-lg">
-                    ${product.price}
+                    ₹{product.price}
                   </div>
                 </div>
                 <div className="p-4 md:p-6">

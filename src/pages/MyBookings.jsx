@@ -139,7 +139,7 @@ const MyBookings = () => {
                   <p><span className="font-bold">Guests:</span> {booking.numberOfGuests}</p>
                   <p><span className="font-bold">Contact:</span> {booking.contactPhone}</p>
                   <p className="text-lg md:text-xl font-bold text-coffee-800 mt-2 md:mt-3">
-                    Total: ${booking.totalPrice?.toFixed(2) || '0.00'}
+                    Total: ₹{booking.totalPrice?.toFixed(2) || '0.00'}
                   </p>
                 </div>
 

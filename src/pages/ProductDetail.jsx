@@ -92,7 +92,7 @@ const ProductDetail = () => {
             className="bg-cream-50 rounded-2xl md:rounded-3xl p-4 md:p-8 shadow-xl border border-coffee-200"
           >
             <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 md:mb-4 text-coffee-800">{product.name}</h1>
-            <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-coffee-700 mb-3 md:mb-6">${product.price}</p>
+            <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-coffee-700 mb-3 md:mb-6">₹{product.price}</p>
             <p className="text-coffee-700 mb-4 md:mb-8 text-sm sm:text-base md:text-lg leading-relaxed">{product.description}</p>
 
             {product.category && (

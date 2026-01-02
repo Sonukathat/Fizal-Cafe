@@ -119,7 +119,7 @@ const Products = () => {
                     className="w-full h-40 sm:h-48 md:h-56 object-cover hover:scale-110 transition-transform duration-300"
                   />
                   <div className="absolute top-2 right-2 sm:top-4 sm:right-4 bg-coffee-700 text-cream-50 px-2 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-base md:text-lg font-bold shadow-xl">
-                    ${product.price}
+                    ₹{product.price}
                   </div>
                 </div>
                 <div className="p-3 sm:p-4 md:p-6">
